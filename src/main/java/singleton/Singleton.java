@@ -1,13 +1,15 @@
 package singleton;
 
+import java.util.Arrays;
+
 public class Singleton{
 
     private Singleton(String[] args){
-        System.out.println("输出中文" + args.toString());
+        System.out.println("输出中文" + Arrays.toString(args));
     }
     private static Singleton single=null;
 
-    public static Singleton getInstance(String[] args){
+    private static Singleton getInstance(String[] args){
         if (single == null){
             single = new Singleton(args);
         }
@@ -17,6 +19,7 @@ public class Singleton{
     public static void main(String[] args){
         Singleton single = new Singleton(args);
         Singleton single2 = new Singleton(args);
-        Singleton.getInstance(args);
+        // Singleton.getInstance(args)时，getInstance可以为void类型 TODO:研究下究竟应选择哪种使用方式
+        Singleton a = Singleton.getInstance(args);
     }
 }
