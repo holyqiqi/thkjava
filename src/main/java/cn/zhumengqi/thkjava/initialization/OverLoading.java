@@ -7,7 +7,7 @@ import static cn.zhumengqi.util.Print.*;
  * 构造器重载、方法重载
  */
 class Tree {
-    private int height;
+    private int height; //Warning 1:变量不定义为private，idea会报警告
     Tree(){
         println("种一棵树");
         height = 0;
@@ -19,7 +19,7 @@ class Tree {
     void info(){
         println("树高：" + height);
     }
-    void info(String s){
+    void info(String s){ //Warning 2:只有一处调用了info(s)方法，猜测为idea(预)运行后发现s永远为定值，这里也报告警告，提示将s写到代码中，不提出来作为行参。
         println(s + "树高：" + height);
     }
 }
