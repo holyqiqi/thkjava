@@ -1,19 +1,2 @@
-# Created by .ignore support plugin (hsz.mobi)
-将删除 .idea/
-将删除 src/main/resources/
-将删除 target/classes/cn/zhumengqi/thkjava/c1/
-将删除 target/classes/cn/zhumengqi/thkjava/c18/
-将删除 target/classes/cn/zhumengqi/thkjava/c2/
-将删除 target/classes/cn/zhumengqi/thkjava/c4/
-将删除 target/classes/cn/zhumengqi/thkjava/initialization/
-将删除 target/classes/cn/zhumengqi/thkjava/operators/
-将删除 target/classes/others/
-将删除 target/classes/singleton/Singleton.class
-将删除 target/generated-sources/
-将删除 target/test-classes/
-src/main/java/net/
 src/main/java/net/build.xml
-target/
 thkjava.iml
-将删除 src/main/java/cn/zhumengqi/thkjava/c2/
-将删除 src/main/java/singleton/test/
